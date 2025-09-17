@@ -31,6 +31,27 @@ def load_data(data_path, test_path=None):
     
     return df, test_df
 
+
+#--------------------------------
+
+# In forecasting.py, add this function near your other imports
+
+def convert_nan_to_none(obj):
+    """
+    Recursively walks a dictionary or list and converts float NaN values to None.
+    """
+    if isinstance(obj, dict):
+        return {k: convert_nan_to_none(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [convert_nan_to_none(i) for i in obj]
+    # Check for float('nan')
+    elif isinstance(obj, float) and math.isnan(obj):
+        return None
+    return obj
+
+#--------------------------------
+
+
 # -------------------------------
 # Preprocessing
 # -------------------------------
@@ -87,7 +108,12 @@ def forecast_panel(processed_df, forecast_months, regressors=['mrp','discount','
                 m.fit(train_prop)
 
                 # future frame
-                future_index = pd.date_range(train['date'].min(), periods=len(train)+len(forecast_months), freq='MS')
+                # future_index = pd.date_range(train['date'].min(), periods=len(train)+len(forecast_months), freq='MS')
+                # extend future until the requested end date
+                future_index = pd.date_range(train['date'].min(), 
+                             forecast_months.max(), 
+                             freq='MS')
+
                 future = pd.DataFrame({'ds': future_index})
                 for r in available_regs:
                     tmp = train[['date', r]].rename(columns={'date':'ds'})
@@ -146,6 +172,10 @@ def run_forecast(train_file, start_month, end_month, test_file=None):
     raw, test_actuals = load_data(train_file, test_file)
     processed = preprocess_panel(raw)
     
+    if test_actuals is not None:
+        # This line finds any missing values (NaNs) in your test data and fills them with 0.
+        test_actuals.fillna(0, inplace=True)
+        
     # Forecast months
     FORECAST_START = pd.to_datetime(start_month)
     FORECAST_END = pd.to_datetime(end_month)
@@ -169,6 +199,10 @@ def run_forecast(train_file, start_month, end_month, test_file=None):
         for prod, g in merged.groupby('product_code'):
             a = g['sales'].values
             f = g['forecast'].values
+
+            a = np.nan_to_num(a) # Converts any NaN in actuals to 0
+            f = np.nan_to_num(f) # Converts any NaN in forecasts to 0
+
             metrics[prod] = compute_metrics_series(a,f)
     
     # Aggregated metrics (optional)
@@ -185,8 +219,18 @@ def run_forecast(train_file, start_month, end_month, test_file=None):
             "accuracy_mean": float(np.mean(acc_vals)) if acc_vals else None,
         }
     
-    return {
+        last_dates_per_product = raw.groupby('product_code')['date'].max().apply(lambda x: x.strftime('%Y-%m-%d')).to_dict()
+
+    final_result = {
         "forecasted_products": forecasted_products,
         "metrics": metrics,
-        "aggregated_metrics": agg_metrics
+        "aggregated_metrics": agg_metrics,
+        "meta": {
+            "method": "Prophet" if use_prophet else "ExponentialSmoothing",
+            "generated_on": datetime.now().isoformat(),
+            "last_dates_per_product": last_dates_per_product
+        }
     }
+    
+    # ✅ WRAP THE FINAL DICTIONARY IN THE HELPER FUNCTION
+    return convert_nan_to_none(final_result)
