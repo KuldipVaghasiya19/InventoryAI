@@ -1,0 +1,121 @@
+date,product_code,sales,category,sub_category,brand,region,mrp,discount,rating
+2025-01-01,P001,530,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2025-02-01,P001,510,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2025-03-01,P001,550,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2025-04-01,P001,580,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2025-05-01,P001,560,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2025-06-01,P001,540,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2025-07-01,P001,520,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2025-08-01,P001,500,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2025-09-01,P001,480,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2025-10-01,P001,680,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2025-11-01,P001,720,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2025-12-01,P001,600,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2025-01-01,P002,540,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2025-02-01,P002,520,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2025-03-01,P002,560,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2025-04-01,P002,590,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2025-05-01,P002,570,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2025-06-01,P002,550,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2025-07-01,P002,530,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2025-08-01,P002,510,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2025-09-01,P002,490,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2025-10-01,P002,690,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2025-11-01,P002,730,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2025-12-01,P002,610,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2025-01-01,P003,590,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2025-02-01,P003,570,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2025-03-01,P003,610,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2025-04-01,P003,640,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2025-05-01,P003,620,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2025-06-01,P003,600,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2025-07-01,P003,580,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2025-08-01,P003,560,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2025-09-01,P003,540,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2025-10-01,P003,740,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2025-11-01,P003,780,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2025-12-01,P003,660,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2025-01-01,P004,640,Books,Fiction,Penguin,East,500,0.05,4.6
+2025-02-01,P004,620,Books,Fiction,Penguin,East,500,0.05,4.6
+2025-03-01,P004,660,Books,Fiction,Penguin,East,500,0.05,4.6
+2025-04-01,P004,690,Books,Fiction,Penguin,East,500,0.05,4.6
+2025-05-01,P004,670,Books,Fiction,Penguin,East,500,0.05,4.6
+2025-06-01,P004,650,Books,Fiction,Penguin,East,500,0.05,4.6
+2025-07-01,P004,630,Books,Fiction,Penguin,East,500,0.05,4.6
+2025-08-01,P004,610,Books,Fiction,Penguin,East,500,0.05,4.6
+2025-09-01,P004,590,Books,Fiction,Penguin,East,500,0.05,4.6
+2025-10-01,P004,790,Books,Fiction,Penguin,East,500,0.05,4.6
+2025-11-01,P004,830,Books,Fiction,Penguin,East,500,0.05,4.6
+2025-12-01,P004,710,Books,Fiction,Penguin,East,500,0.05,4.6
+2025-01-01,P005,340,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2025-02-01,P005,320,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2025-03-01,P005,360,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2025-04-01,P005,390,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2025-05-01,P005,370,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2025-06-01,P005,350,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2025-07-01,P005,330,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2025-08-01,P005,310,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2025-09-01,P005,290,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2025-10-01,P005,490,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2025-11-01,P005,530,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2025-12-01,P005,410,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2025-01-01,P006,710,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2025-02-01,P006,690,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2025-03-01,P006,730,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2025-04-01,P006,760,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2025-05-01,P006,740,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2025-06-01,P006,720,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2025-07-01,P006,700,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2025-08-01,P006,680,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2025-09-01,P006,660,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2025-10-01,P006,860,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2025-11-01,P006,900,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2025-12-01,P006,780,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2025-01-01,P007,810,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2025-02-01,P007,790,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2025-03-01,P007,830,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2025-04-01,P007,860,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2025-05-01,P007,840,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2025-06-01,P007,820,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2025-07-01,P007,800,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2025-08-01,P007,780,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2025-09-01,P007,760,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2025-10-01,P007,960,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2025-11-01,P007,1000,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2025-12-01,P007,880,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2025-01-01,P008,310,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2025-02-01,P008,290,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2025-03-01,P008,330,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2025-04-01,P008,360,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2025-05-01,P008,340,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2025-06-01,P008,320,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2025-07-01,P008,300,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2025-08-01,P008,280,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2025-09-01,P008,260,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2025-10-01,P008,460,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2025-11-01,P008,500,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2025-12-01,P008,380,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2025-01-01,P009,770,Groceries,Snacks,Lays,East,20,0,4.3
+2025-02-01,P009,750,Groceries,Snacks,Lays,East,20,0,4.3
+2025-03-01,P009,790,Groceries,Snacks,Lays,East,20,0,4.3
+2025-04-01,P009,820,Groceries,Snacks,Lays,East,20,0,4.3
+2025-05-01,P009,800,Groceries,Snacks,Lays,East,20,0,4.3
+2025-06-01,P009,780,Groceries,Snacks,Lays,East,20,0,4.3
+2025-07-01,P009,760,Groceries,Snacks,Lays,East,20,0,4.3
+2025-08-01,P009,740,Groceries,Snacks,Lays,East,20,0,4.3
+2025-09-01,P009,720,Groceries,Snacks,Lays,East,20,0,4.3
+2025-10-01,P009,920,Groceries,Snacks,Lays,East,20,0,4.3
+2025-11-01,P009,960,Groceries,Snacks,Lays,East,20,0,4.3
+2025-12-01,P009,840,Groceries,Snacks,Lays,East,20,0,4.3
+2025-01-01,P010,670,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2025-02-01,P010,650,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2025-03-01,P010,690,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2025-04-01,P010,720,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2025-05-01,P010,700,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2025-06-01,P010,680,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2025-07-01,P010,660,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2025-08-01,P010,640,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2025-09-01,P010,620,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2025-10-01,P010,820,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2025-11-01,P010,860,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2025-12-01,P010,740,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
