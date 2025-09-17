@@ -34,21 +34,28 @@ const handleDataUpload = (file) => {
   });
 };
 
+
 const handleGenerateForecast = async () => {
   if (!uploadedFile || !startMonth || !endMonth) return;
 
   setIsGenerating(true);
+  const formatMonth = (value) => {
+  // value will be "2025-10"
+  const [year, month] = value.split("-");
+  return `${month}/${year}`;  // -> "10/2025"
+};
   try {
     const formData = new FormData();
     formData.append('train_file', uploadedFile, uploadedFile.name); // File object
-    formData.append('start_month', startMonth); // e.g., "01/2025"
-    formData.append('end_month', endMonth);     // e.g., "04/2025"
+   formData.append("start_month", formatMonth(startMonth));
+formData.append("end_month", formatMonth(endMonth));
 
     const response = await fetch('http://127.0.0.1:8000/forecast', {
       method: 'POST',
       body: formData, // do NOT set Content-Type manually
     });
 
+    console.log(response);
     const data = await response.json();
     setForecastData(data);
     setShowForecast(true);
@@ -66,7 +73,7 @@ const handleGenerateForecast = async () => {
     `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
 
   const today = new Date();
-  const minStartDate = new Date(today.getFullYear(), today.getMonth() + 1, 1);
+  const minStartDate = new Date(today.getFullYear(), 0, 1);
 
   let minEndDate = null;
   let maxEndDate = null;
