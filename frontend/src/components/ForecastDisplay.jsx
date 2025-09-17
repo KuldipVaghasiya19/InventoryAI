@@ -3,12 +3,12 @@ import { Calendar, TrendingUp, Package, Clock, BarChart3, LineChart } from 'luci
 import { LineChart as RechartsLineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, PieChart, Pie, Cell } from 'recharts';
 import { useTheme } from '../contexts/ThemeContext';
 
-const ForecastDisplay = ({ forecastData }) => {
+const ForecastDisplay = ({ forecastData, startMonth, endMonth }) => {
   const { isDark } = useTheme();
 
   if (!forecastData) return null;
 
-  const { forecasted_products, metrics } = forecastData;
+  const { forecasted_products, meta } = forecastData;
 
   // Prepare data for line chart
   const lineChartData = forecasted_products.map(forecast => {
@@ -51,7 +51,7 @@ const ForecastDisplay = ({ forecastData }) => {
   return (
     <div className="space-y-8">
       {/* Meta Information */}
-      {/* <div className={`p-6 rounded-xl ${
+      <div className={`p-6 rounded-xl ${
         isDark ? 'bg-gray-800 border border-gray-700' : 'bg-white border border-gray-200'
       } shadow-lg`}>
         <div className="flex items-center space-x-3 mb-4">
@@ -68,7 +68,7 @@ const ForecastDisplay = ({ forecastData }) => {
             <div className="flex items-center space-x-2 mb-2">
               <Package className="w-4 h-4 text-blue-500" />
               <span className={`text-sm font-medium ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
-                Method
+                Forecast Method
               </span>
             </div>
             <p className={`font-semibold ${isDark ? 'text-white' : 'text-gray-900'}`}>
@@ -80,7 +80,7 @@ const ForecastDisplay = ({ forecastData }) => {
             <div className="flex items-center space-x-2 mb-2">
               <Clock className="w-4 h-4 text-green-500" />
               <span className={`text-sm font-medium ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
-                Generated On
+                Analysis Date
               </span>
             </div>
             <p className={`font-semibold ${isDark ? 'text-white' : 'text-gray-900'}`}>
@@ -92,15 +92,29 @@ const ForecastDisplay = ({ forecastData }) => {
             <div className="flex items-center space-x-2 mb-2">
               <Calendar className="w-4 h-4 text-purple-500" />
               <span className={`text-sm font-medium ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
-                Products
+                Products Analyzed
               </span>
             </div>
             <p className={`font-semibold ${isDark ? 'text-white' : 'text-gray-900'}`}>
               {Object.keys(meta.last_dates_per_product).length}
             </p>
           </div>
+          
+          {startMonth && endMonth && (
+            <div className={`p-4 rounded-lg ${isDark ? 'bg-gray-700' : 'bg-gray-50'}`}>
+              <div className="flex items-center space-x-2 mb-2">
+                <Calendar className="w-4 h-4 text-orange-500" />
+                <span className={`text-sm font-medium ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
+                  Forecast Period
+                </span>
+              </div>
+              <p className={`font-semibold ${isDark ? 'text-white' : 'text-gray-900'}`}>
+                {new Date(startMonth).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })} - {new Date(endMonth).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
+              </p>
+            </div>
+          )}
         </div>
-      </div> */}
+      </div>
 
       {/* Charts Section */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -194,9 +208,49 @@ const ForecastDisplay = ({ forecastData }) => {
           </ResponsiveContainer>
         </div>
 
-        
+        {/* Pie Chart - Total Distribution */}
+        <div className={`p-6 rounded-xl ${
+          isDark ? 'bg-gray-800 border border-gray-700' : 'bg-white border border-gray-200'
+        } shadow-lg`}>
+          <div className="flex items-center space-x-3 mb-6">
+            <div className="p-2 bg-purple-500 rounded-lg">
+              <Package className="w-5 h-5 text-white" />
+            </div>
+            <h3 className={`text-lg font-semibold ${isDark ? 'text-white' : 'text-gray-900'}`}>
+              Product Distribution
+            </h3>
+          </div>
+          
+          <ResponsiveContainer width="100%" height={300}>
+            <PieChart>
+              <Pie
+                data={pieChartData}
+                cx="50%"
+                cy="50%"
+                labelLine={false}
+                label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+                outerRadius={80}
+                fill="#8884d8"
+                dataKey="value"
+              >
+                {pieChartData.map((entry, index) => (
+                  <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                ))}
+              </Pie>
+              <Tooltip 
+                contentStyle={{
+                  backgroundColor: chartTheme.background,
+                  border: `1px solid ${chartTheme.grid}`,
+                  borderRadius: '8px',
+                  color: chartTheme.text
+                }}
+              />
+            </PieChart>
+          </ResponsiveContainer>
+        </div>
+
         {/* Summary Table */}
-        {/* <div className={`p-6 rounded-xl ${
+        <div className={`p-6 rounded-xl ${
           isDark ? 'bg-gray-800 border border-gray-700' : 'bg-white border border-gray-200'
         } shadow-lg`}>
           <div className="flex items-center space-x-3 mb-6">
@@ -256,7 +310,7 @@ const ForecastDisplay = ({ forecastData }) => {
               </tbody>
             </table>
           </div>
-        </div> */}
+        </div>
       </div>
 
       {/* Detailed Forecasted Products */}
@@ -315,7 +369,7 @@ const ForecastDisplay = ({ forecastData }) => {
       </div>
 
       {/* Last Dates Per Product */}
-      {/* <div className={`p-6 rounded-xl ${
+      <div className={`p-6 rounded-xl ${
         isDark ? 'bg-gray-800 border border-gray-700' : 'bg-white border border-gray-200'
       } shadow-lg`}>
         <h2 className={`text-xl font-semibold mb-4 ${isDark ? 'text-white' : 'text-gray-900'}`}>
@@ -339,7 +393,7 @@ const ForecastDisplay = ({ forecastData }) => {
             </div>
           ))}
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

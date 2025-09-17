@@ -3,131 +3,82 @@ import { Package, TrendingUp, AlertTriangle, DollarSign } from 'lucide-react';
 import FileUpload from '../components/FileUpload';
 import ForecastDisplay from '../components/ForecastDisplay';
 import { useTheme } from '../contexts/ThemeContext';
-import { ApiService } from '../services/api.js';
+import { ApiService } from '../services/api';
+import Papa from 'papaparse';
 
 const Dashboard = () => {
   const { isDark } = useTheme();
+  const [uploadedFile, setUploadedFile] = useState(null);
   const [uploadedData, setUploadedData] = useState(null);
   const [fileName, setFileName] = useState('');
+  const [startMonth, setStartMonth] = useState('');
+  const [endMonth, setEndMonth] = useState('');
+  const [showForecast, setShowForecast] = useState(false);
+  const [isGenerating, setIsGenerating] = useState(false);
   const [forecastData, setForecastData] = useState(null);
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
-  const [stats, setStats] = useState({
-    totalItems: 0,
-    predictedGrowth: 0,
-    lowStockItems: 0,
-    revenueForecast: 0
+// Change handleDataUpload
+const handleDataUpload = (file) => {
+  if (!file) return;
+
+  setUploadedFile(file);   // <-- keep the File object
+  setFileName(file.name);
+
+  // Parse CSV only for displaying, do NOT replace uploadedFile
+  Papa.parse(file, {
+    header: true,
+    skipEmptyLines: true,
+    complete: (results) => {
+      setUploadedData(results.data);  // for display only
+      setShowForecast(false);
+    },
   });
+};
 
-  const handleDataUpload = async (data, name) => {
+const handleGenerateForecast = async () => {
+  if (!uploadedFile || !startMonth || !endMonth) return;
 
-    setUploadedData(data);
-    setFileName(name);
-    setIsLoading(true);
-    setError(null);
+  setIsGenerating(true);
+  try {
+    const formData = new FormData();
+    formData.append('train_file', uploadedFile, uploadedFile.name); // File object
+    formData.append('start_month', startMonth); // e.g., "01/2025"
+    formData.append('end_month', endMonth);     // e.g., "04/2025"
 
-    try {
-      // Generate forecast using API
-      console.log(data);
-      // const forecast = await ApiService.generateForecast(data);
-      // console.log(forecast);
-      setForecastData(data);
+    const response = await fetch('http://127.0.0.1:8000/forecast', {
+      method: 'POST',
+      body: formData, // do NOT set Content-Type manually
+    });
 
-      // Get updated stats
-      // const statsData = await ApiService.getInventoryStats(data);
-      // setStats(statsData);
-    } catch (err) {
-      setError(err.message);
-      // Fallback to sample data for demo purposes
-      setForecastData(sampleForecastData);
-      // setStats({
-      //   totalItems: data.length,
-      //   predictedGrowth: 15.2,
-      //   lowStockItems: Math.floor(data.length * 0.1),
-      //   revenueForecast: 124500
-      // });
-    } finally {
-      setIsLoading(false);
-    }
-  };
+    const data = await response.json();
+    setForecastData(data);
+    setShowForecast(true);
+  } catch (error) {
+    console.error(error);
+    alert(error.message);
+  } finally {
+    setIsGenerating(false);
+  }
+};
 
-  // Sample forecast data (fallback for demo purposes)
-  const sampleForecastData = uploadedData ? {
-    "forecasted_products": [
-      {
-        "2022-01-01": {
-          "Alpha": 438,
-          "Bravo": 452,
-          "Charlie": 564,
-          "Delta": 919,
-          "Echo": 1084
-        }
-      },
-      {
-        "2022-02-01": {
-          "Alpha": 428,
-          "Bravo": 455,
-          "Charlie": 716,
-          "Delta": 996,
-          "Echo": 1006
-        }
-      },
-      {
-        "2022-03-01": {
-          "Alpha": 384,
-          "Bravo": 499,
-          "Charlie": 772,
-          "Delta": 830,
-          "Echo": 1347
-        }
-      }
-    ],
-    "meta": {
-      "last_dates_per_product": {
-        "Alpha": "2021-12-01",
-        "Bravo": "2021-12-01",
-        "Charlie": "2021-12-01",
-        "Delta": "2021-12-01",
-        "Echo": "2021-12-01"
-      },
-      "method": "prophet",
-      "generated_on": "2025-08-29T18:04:08Z"
-    }
-  } : null;
 
-  // const statsCards = [
-  //   {
-  //     title: 'Total Items',
-  //     value: stats.totalItems.toLocaleString(),
-  //     change: 12,
-  //     icon: Package,
-  //     color: 'bg-blue-500'
-  //   },
-  //   {
-  //     title: 'Predicted Growth',
-  //     value: `${stats.predictedGrowth}%`,
-  //     change: 8.1,
-  //     icon: TrendingUp,
-  //     color: 'bg-green-500'
-  //   },
-  //   {
-  //     title: 'Low Stock Items',
-  //     value: stats.lowStockItems.toString(),
-  //     change: -5,
-  //     icon: AlertTriangle,
-  //     color: 'bg-orange-500'
-  //   },
-  //   {
-  //     title: 'Revenue Forecast',
-  //     value: `$${(stats.revenueForecast / 1000).toFixed(1)}K`,
-  //     change: 23,
-  //     icon: DollarSign,
-  //     color: 'bg-purple-500'
-  //   }
-  // ];
+
+  const formatMonth = (date) =>
+    `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+
+  const today = new Date();
+  const minStartDate = new Date(today.getFullYear(), today.getMonth() + 1, 1);
+
+  let minEndDate = null;
+  let maxEndDate = null;
+  if (startMonth) {
+    const start = new Date(startMonth);
+    minEndDate = new Date(start.getFullYear(), start.getMonth() + 1, 1);
+    maxEndDate = new Date(start.getFullYear(), start.getMonth() + 6, 1);
+  }
 
   return (
     <div className="space-y-8">
+      {/* Header */}
       <div className="text-center">
         <h1 className={`text-4xl font-bold mb-4 ${isDark ? 'text-white' : 'text-gray-900'}`}>
           AI Inventory Prediction System
@@ -139,51 +90,59 @@ const Dashboard = () => {
 
       <div className="max-w-2xl mx-auto">
         <FileUpload onDataUpload={handleDataUpload} />
-        
-        {uploadedData && (
-          <div className={`mt-6 p-4 rounded-lg ${
-            isDark ? 'bg-green-900/20 border border-green-700' : 'bg-green-50 border border-green-200'
-          }`}>
-            <p className={`text-sm ${isDark ? 'text-green-400' : 'text-green-700'}`}>
-              ✅ Successfully loaded <strong>{fileName}</strong> with {uploadedData.length} records
-            </p>
-          </div>
-        )}
 
-        {isLoading && (
-          <div className={`mt-6 p-4 rounded-lg ${
-            isDark ? 'bg-blue-900/20 border border-blue-700' : 'bg-blue-50 border border-blue-200'
-          }`}>
-            <div className="flex items-center space-x-3">
-              <div className="animate-spin w-5 h-5 border-2 border-blue-500 border-t-transparent rounded-full"></div>
-              <p className={`text-sm ${isDark ? 'text-blue-400' : 'text-blue-700'}`}>
-                🤖 AI is analyzing your data and generating forecasts...
-              </p>
+        {/* Month Selection */}
+        <div className={`mt-6 p-6 rounded-xl border ${isDark ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'} shadow-lg`}>
+          <h3 className={`text-lg font-semibold mb-4 ${isDark ? 'text-white' : 'text-gray-900'}`}>Forecast Period</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label className={`block text-sm font-medium mb-2 ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>Start Month</label>
+              <input
+                type="month"
+                value={startMonth}
+                onChange={(e) => {
+                  setStartMonth(e.target.value);
+                  setEndMonth('');
+                }}
+                min={formatMonth(minStartDate)}
+                className={`w-full px-4 py-3 rounded-lg border transition-colors ${isDark ? 'bg-gray-700 border-gray-600 text-white focus:border-blue-500' : 'bg-white border-gray-300 text-gray-900 focus:border-blue-500'} focus:outline-none focus:ring-2 focus:ring-blue-500/20`}
+              />
+            </div>
+            <div>
+              <label className={`block text-sm font-medium mb-2 ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>End Month</label>
+              <input
+                type="month"
+                value={endMonth}
+                onChange={(e) => setEndMonth(e.target.value)}
+                min={startMonth && minEndDate ? formatMonth(minEndDate) : ''}
+                max={startMonth && maxEndDate ? formatMonth(maxEndDate) : ''}
+                disabled={!startMonth}
+                className={`w-full px-4 py-3 rounded-lg border transition-colors ${isDark ? 'bg-gray-700 border-gray-600 text-white focus:border-blue-500' : 'bg-white border-gray-300 text-gray-900 focus:border-blue-500'} focus:outline-none focus:ring-2 focus:ring-blue-500/20`}
+              />
             </div>
           </div>
-        )}
+        </div>
 
-        {error && (
-          <div className={`mt-6 p-4 rounded-lg ${
-            isDark ? 'bg-yellow-900/20 border border-yellow-700' : 'bg-yellow-50 border border-yellow-200'
-          }`}>
-            <p className={`text-sm ${isDark ? 'text-yellow-400' : 'text-yellow-700'}`}>
-              ⚠️ API Error: {error}. Using sample data for demonstration.
-            </p>
-          </div>
-        )}
+        <button
+          onClick={handleGenerateForecast}
+          disabled={!uploadedFile || !startMonth || !endMonth || isGenerating}
+          className={`w-full mt-4 px-6 py-3 rounded-lg font-medium transition-all duration-200 ${!uploadedFile || !startMonth || !endMonth || isGenerating ? 'bg-gray-300 text-gray-500 cursor-not-allowed dark:bg-gray-700 dark:text-gray-400' : isDark ? 'bg-blue-600 text-white hover:bg-blue-700 hover:scale-105 shadow-lg hover:shadow-xl' : 'bg-blue-500 text-white hover:bg-blue-600 hover:scale-105 shadow-lg hover:shadow-xl'}`}
+        >
+          {isGenerating ? 'Generating Forecast...' : 'Generate AI Forecast'}
+        </button>
       </div>
 
-      {uploadedData && forecastData && (
-        <ForecastDisplay forecastData={forecastData} />
+      {uploadedData && (
+        <div className={`mt-6 p-4 rounded-lg ${isDark ? 'bg-green-900/20 border border-green-700' : 'bg-green-50 border border-green-200'}`}>
+          <p className={`text-sm ${isDark ? 'text-green-400' : 'text-green-700'}`}>
+            ✅ Successfully loaded <strong>{fileName}</strong> with {uploadedData.length} records
+          </p>
+        </div>
       )}
 
-      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {statsCards.map((stat, index) => (
-          <StatsCard key={index} {...stat} />
-        ))}
-      </div> */}
-
+      {showForecast && forecastData && (
+        <ForecastDisplay forecastData={forecastData} startMonth={startMonth} endMonth={endMonth} />
+      )}
     </div>
   );
 };

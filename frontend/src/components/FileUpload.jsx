@@ -2,7 +2,6 @@ import React, { useCallback, useState } from 'react';
 import { Upload, File, CheckCircle, AlertCircle } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 import Papa from 'papaparse';
-import { ApiService } from '../services/api';
 
 const FileUpload = ({ onDataUpload }) => {
   const { isDark } = useTheme();
@@ -11,23 +10,27 @@ const FileUpload = ({ onDataUpload }) => {
   const [fileName, setFileName] = useState('');
 
   const handleFile = useCallback((file) => {
-  if (!file) return;
+    if (!file) return;
 
-  setFileName(file.name);
-  setUploadStatus('processing');
+    setFileName(file.name);
+    setUploadStatus('processing');
 
-  // ✅ just send file directly to backend
-  ApiService.generateForecast(file)
-    .then((result) => {
-      setUploadStatus('success');
-      onDataUpload(result, file.name); // send JSON result to parent
-    })
-    .catch(() => {
+    if (file.name.endsWith('.csv')) {
+      Papa.parse(file, {
+        complete: (results) => {
+          setUploadStatus('success');
+          onDataUpload(results.data, file.name);
+        },
+        header: true,
+        error: () => {
+          setUploadStatus('error');
+        }
+      });
+    } else {
+      // For Excel files, you might want to use a library like xlsx
       setUploadStatus('error');
-    });
-
-}, [onDataUpload]);
-
+    }
+  }, [onDataUpload]);
 
   const handleDrag = useCallback((e) => {
     e.preventDefault();
