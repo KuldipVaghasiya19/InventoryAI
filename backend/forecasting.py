@@ -100,7 +100,8 @@ def forecast_panel(processed_df, forecast_months, regressors=['mrp','discount','
         train = g.copy()
         try:
             if use_prophet:
-                m = Prophet(yearly_seasonality=True, weekly_seasonality=False, daily_seasonality=False)
+                m = Prophet(yearly_seasonality=True, weekly_seasonality=False, daily_seasonality=False,seasonality_mode='additive')
+                m.add_country_holidays(country_name='IN')
                 available_regs = [r for r in regressors if r in train.columns]
                 for r in available_regs:
                     m.add_regressor(r)
