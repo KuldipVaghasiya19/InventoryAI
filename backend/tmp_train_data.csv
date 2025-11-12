@@ -1,0 +1,565 @@
+date,product_code,sales,category,sub_category,brand,region,mrp,discount,rating
+2020-01-01,P001,164,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2020-02-01,P001,189,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2020-03-01,P001,232,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2020-04-01,P001,252,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2020-05-01,P001,170,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2020-06-01,P001,126,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2020-07-01,P001,138,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2020-08-01,P001,83,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2020-09-01,P001,40,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2020-10-01,P001,250,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2020-11-01,P001,300,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2020-12-01,P001,160,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2021-01-01,P001,238,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2021-02-01,P001,217,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2021-03-01,P001,243,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2021-04-01,P001,271,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2021-05-01,P001,228,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2021-06-01,P001,224,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2021-07-01,P001,144,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2021-08-01,P001,99,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2021-09-01,P001,179,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2021-10-01,P001,350,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2021-11-01,P001,400,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2021-12-01,P001,213,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2022-01-01,P001,296,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2022-02-01,P001,359,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2022-03-01,P001,341,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2022-04-01,P001,380,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2022-05-01,P001,321,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2022-06-01,P001,287,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2022-07-01,P001,235,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2022-08-01,P001,279,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2022-09-01,P001,216,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2022-10-01,P001,450,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2022-11-01,P001,500,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2022-12-01,P001,300,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2023-01-01,P001,400,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2023-02-01,P001,378,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2023-03-01,P001,417,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2023-04-01,P001,456,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2023-05-01,P001,443,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2023-06-01,P001,383,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2023-07-01,P001,331,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2023-08-01,P001,295,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2023-09-01,P001,253,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2023-10-01,P001,550,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2023-11-01,P001,600,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2023-12-01,P001,450,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2024-01-01,P001,485,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2024-02-01,P001,465,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2024-03-01,P001,548,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2024-04-01,P001,520,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2024-05-01,P001,482,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2024-06-01,P001,477,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2024-07-01,P001,447,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2024-08-01,P001,414,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2024-09-01,P001,354,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2024-10-01,P001,650,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2024-11-01,P001,700,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2024-12-01,P001,529,Electronics,Mobiles,Samsung,North,15000,0.1,4.5
+2020-01-01,P002,135,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2020-02-01,P002,187,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2020-03-01,P002,180,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2020-04-01,P002,171,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2020-05-01,P002,201,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2020-08-01,P002,90,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2020-09-01,P002,65,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2020-10-01,P002,200,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2020-11-01,P002,250,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2020-12-01,P002,220,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2021-01-01,P002,230,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2021-02-01,P002,321,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2021-03-01,P002,216,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2021-04-01,P002,312,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2021-05-01,P002,261,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2021-06-01,P002,206,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2021-07-01,P002,174,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2021-08-01,P002,82,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2021-09-01,P002,129,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2021-10-01,P002,300,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2021-11-01,P002,350,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2021-12-01,P002,240,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2022-01-01,P002,288,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2022-02-01,P002,341,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2022-03-01,P002,403,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2022-04-01,P002,379,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2022-05-01,P002,323,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2022-06-01,P002,312,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2022-07-01,P002,256,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2022-08-01,P002,252,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2022-09-01,P002,195,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2022-10-01,P002,400,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2022-11-01,P002,450,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2022-12-01,P002,293,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2023-01-01,P002,402,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2023-02-01,P002,445,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2023-03-01,P002,457,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2023-04-01,P002,443,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2023-05-01,P002,378,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2023-06-01,P002,365,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2023-07-01,P002,324,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2023-08-01,P002,280,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2023-09-01,P002,293,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2023-10-01,P002,500,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2023-11-01,P002,550,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2023-12-01,P002,423,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2024-01-01,P002,483,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2024-02-01,P002,516,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2024-03-01,P002,481,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2024-04-01,P002,531,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2024-05-01,P002,504,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2024-06-01,P002,533,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2024-07-01,P002,410,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2024-08-01,P002,395,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2024-09-01,P002,378,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2024-10-01,P002,600,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2024-11-01,P002,650,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2024-12-01,P002,522,Clothing,Shirts,Peter England,West,2500,0.2,4.2
+2020-01-01,P003,173,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2020-02-01,P003,166,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2020-03-01,P003,255,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2020-04-01,P003,164,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2020-05-01,P003,194,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2020-06-01,P003,199,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2020-07-01,P003,60,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2020-11-01,P003,270,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2020-12-01,P003,176,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2021-01-01,P003,199,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2021-02-01,P003,288,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2021-03-01,P003,267,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2021-04-01,P003,334,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2021-05-01,P003,234,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2021-06-01,P003,205,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2021-07-01,P003,196,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2021-08-01,P003,105,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2021-09-01,P003,142,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2021-10-01,P003,320,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2021-11-01,P003,370,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2021-12-01,P003,261,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2022-01-01,P003,320,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2022-02-01,P003,379,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2022-03-01,P003,339,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2022-04-01,P003,330,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2022-05-01,P003,355,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2022-06-01,P003,305,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2022-07-01,P003,260,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2022-08-01,P003,233,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2022-09-01,P003,196,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2022-10-01,P003,420,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2022-11-01,P003,470,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2022-12-01,P003,315,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2023-01-01,P003,450,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2023-02-01,P003,451,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2023-03-01,P003,421,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2023-04-01,P003,470,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2023-05-01,P003,391,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2023-06-01,P003,401,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2023-07-01,P003,369,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2023-08-01,P003,280,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2023-09-01,P003,327,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2023-10-01,P003,520,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2023-11-01,P003,570,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2023-12-01,P003,475,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2024-01-01,P003,468,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2024-02-01,P003,496,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2024-03-01,P003,512,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2024-04-01,P003,507,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2024-05-01,P003,500,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2024-06-01,P003,469,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2024-07-01,P003,424,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2024-08-01,P003,411,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2024-09-01,P003,380,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2024-10-01,P003,620,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2024-11-01,P003,670,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2024-12-01,P003,581,Home & Kitchen,Cookware,Prestige,South,3000,0.15,4.8
+2020-01-01,P004,120,Books,Fiction,Penguin,East,500,0.05,4.6
+2020-02-01,P004,130,Books,Fiction,Penguin,East,500,0.05,4.6
+2020-03-01,P004,140,Books,Fiction,Penguin,East,500,0.05,4.6
+2020-04-01,P004,150,Books,Fiction,Penguin,East,500,0.05,4.6
+2020-05-01,P004,160,Books,Fiction,Penguin,East,500,0.05,4.6
+2020-06-01,P004,170,Books,Fiction,Penguin,East,500,0.05,4.6
+2020-07-01,P004,180,Books,Fiction,Penguin,East,500,0.05,4.6
+2020-08-01,P004,190,Books,Fiction,Penguin,East,500,0.05,4.6
+2020-09-01,P004,200,Books,Fiction,Penguin,East,500,0.05,4.6
+2020-10-01,P004,300,Books,Fiction,Penguin,East,500,0.05,4.6
+2020-11-01,P004,350,Books,Fiction,Penguin,East,500,0.05,4.6
+2020-12-01,P004,220,Books,Fiction,Penguin,East,500,0.05,4.6
+2021-01-01,P004,230,Books,Fiction,Penguin,East,500,0.05,4.6
+2021-04-01,P004,260,Books,Fiction,Penguin,East,500,0.05,4.6
+2021-05-01,P004,270,Books,Fiction,Penguin,East,500,0.05,4.6
+2021-06-01,P004,280,Books,Fiction,Penguin,East,500,0.05,4.6
+2021-07-01,P004,290,Books,Fiction,Penguin,East,500,0.05,4.6
+2021-08-01,P004,300,Books,Fiction,Penguin,East,500,0.05,4.6
+2021-09-01,P004,310,Books,Fiction,Penguin,East,500,0.05,4.6
+2021-10-01,P004,400,Books,Fiction,Penguin,East,500,0.05,4.6
+2021-11-01,P004,450,Books,Fiction,Penguin,East,500,0.05,4.6
+2021-12-01,P004,330,Books,Fiction,Penguin,East,500,0.05,4.6
+2022-01-01,P004,340,Books,Fiction,Penguin,East,500,0.05,4.6
+2022-02-01,P004,350,Books,Fiction,Penguin,East,500,0.05,4.6
+2022-03-01,P004,360,Books,Fiction,Penguin,East,500,0.05,4.6
+2022-04-01,P004,370,Books,Fiction,Penguin,East,500,0.05,4.6
+2022-05-01,P004,380,Books,Fiction,Penguin,East,500,0.05,4.6
+2022-06-01,P004,390,Books,Fiction,Penguin,East,500,0.05,4.6
+2022-07-01,P004,400,Books,Fiction,Penguin,East,500,0.05,4.6
+2022-08-01,P004,410,Books,Fiction,Penguin,East,500,0.05,4.6
+2022-09-01,P004,420,Books,Fiction,Penguin,East,500,0.05,4.6
+2022-10-01,P004,500,Books,Fiction,Penguin,East,500,0.05,4.6
+2022-11-01,P004,550,Books,Fiction,Penguin,East,500,0.05,4.6
+2022-12-01,P004,430,Books,Fiction,Penguin,East,500,0.05,4.6
+2023-01-01,P004,440,Books,Fiction,Penguin,East,500,0.05,4.6
+2023-02-01,P004,450,Books,Fiction,Penguin,East,500,0.05,4.6
+2023-03-01,P004,460,Books,Fiction,Penguin,East,500,0.05,4.6
+2023-04-01,P004,470,Books,Fiction,Penguin,East,500,0.05,4.6
+2023-05-01,P004,480,Books,Fiction,Penguin,East,500,0.05,4.6
+2023-06-01,P004,490,Books,Fiction,Penguin,East,500,0.05,4.6
+2023-07-01,P004,500,Books,Fiction,Penguin,East,500,0.05,4.6
+2023-08-01,P004,510,Books,Fiction,Penguin,East,500,0.05,4.6
+2023-09-01,P004,520,Books,Fiction,Penguin,East,500,0.05,4.6
+2023-10-01,P004,600,Books,Fiction,Penguin,East,500,0.05,4.6
+2023-11-01,P004,650,Books,Fiction,Penguin,East,500,0.05,4.6
+2023-12-01,P004,530,Books,Fiction,Penguin,East,500,0.05,4.6
+2024-01-01,P004,540,Books,Fiction,Penguin,East,500,0.05,4.6
+2024-02-01,P004,550,Books,Fiction,Penguin,East,500,0.05,4.6
+2024-03-01,P004,560,Books,Fiction,Penguin,East,500,0.05,4.6
+2024-04-01,P004,570,Books,Fiction,Penguin,East,500,0.05,4.6
+2024-05-01,P004,580,Books,Fiction,Penguin,East,500,0.05,4.6
+2024-06-01,P004,590,Books,Fiction,Penguin,East,500,0.05,4.6
+2024-07-01,P004,600,Books,Fiction,Penguin,East,500,0.05,4.6
+2024-08-01,P004,610,Books,Fiction,Penguin,East,500,0.05,4.6
+2024-09-01,P004,620,Books,Fiction,Penguin,East,500,0.05,4.6
+2024-10-01,P004,700,Books,Fiction,Penguin,East,500,0.05,4.6
+2024-11-01,P004,750,Books,Fiction,Penguin,East,500,0.05,4.6
+2024-12-01,P004,630,Books,Fiction,Penguin,East,500,0.05,4.6
+2020-01-01,P005,80,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2020-02-01,P005,85,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2020-03-01,P005,90,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2020-04-01,P005,95,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2020-05-01,P005,100,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2020-06-01,P005,105,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2020-07-01,P005,110,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2020-08-01,P005,115,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2020-09-01,P005,120,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2020-10-01,P005,200,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2020-11-01,P005,220,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2021-02-01,P005,140,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2021-03-01,P005,145,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2021-04-01,P005,150,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2021-05-01,P005,155,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2021-06-01,P005,160,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2021-07-01,P005,165,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2021-08-01,P005,170,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2021-09-01,P005,175,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2021-10-01,P005,250,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2021-11-01,P005,270,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2021-12-01,P005,180,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2022-01-01,P005,185,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2022-02-01,P005,190,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2022-03-01,P005,195,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2022-04-01,P005,200,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2022-05-01,P005,205,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2022-06-01,P005,210,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2022-07-01,P005,215,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2022-08-01,P005,220,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2022-09-01,P005,225,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2022-10-01,P005,300,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2022-11-01,P005,320,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2022-12-01,P005,230,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2023-01-01,P005,235,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2023-02-01,P005,240,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2023-03-01,P005,245,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2023-04-01,P005,250,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2023-05-01,P005,255,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2023-06-01,P005,260,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2023-07-01,P005,265,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2023-08-01,P005,270,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2023-09-01,P005,275,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2023-10-01,P005,350,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2023-11-01,P005,370,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2023-12-01,P005,280,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2024-01-01,P005,285,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2024-02-01,P005,290,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2024-03-01,P005,295,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2024-04-01,P005,300,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2024-05-01,P005,305,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2024-06-01,P005,310,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2024-07-01,P005,315,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2024-08-01,P005,320,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2024-09-01,P005,325,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2024-10-01,P005,400,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2024-11-01,P005,420,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2024-12-01,P005,330,Beauty,Skincare,Lakme,Central,800,0.12,4.7
+2020-01-01,P006,200,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2020-02-01,P006,210,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2020-03-01,P006,220,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2020-04-01,P006,230,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2020-05-01,P006,240,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2020-06-01,P006,250,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2020-07-01,P006,260,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2020-08-01,P006,270,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2020-09-01,P006,280,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2020-10-01,P006,400,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2020-11-01,P006,450,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2020-12-01,P006,300,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2021-01-01,P006,310,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2021-02-01,P006,320,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2021-03-01,P006,330,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2021-08-01,P006,380,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2021-09-01,P006,390,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2021-10-01,P006,500,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2021-11-01,P006,550,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2021-12-01,P006,400,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2022-01-01,P006,410,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2022-02-01,P006,420,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2022-03-01,P006,430,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2022-04-01,P006,440,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2022-05-01,P006,450,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2022-06-01,P006,460,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2022-07-01,P006,470,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2022-08-01,P006,480,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2022-09-01,P006,490,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2022-10-01,P006,600,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2022-11-01,P006,650,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2022-12-01,P006,500,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2023-01-01,P006,510,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2023-02-01,P006,520,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2023-03-01,P006,530,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2023-04-01,P006,540,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2023-05-01,P006,550,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2023-06-01,P006,560,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2023-07-01,P006,570,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2023-08-01,P006,580,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2023-09-01,P006,590,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2023-10-01,P006,700,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2023-11-01,P006,750,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2023-12-01,P006,600,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2024-01-01,P006,610,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2024-02-01,P006,620,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2024-03-01,P006,630,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2024-04-01,P006,640,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2024-05-01,P006,650,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2024-06-01,P006,660,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2024-07-01,P006,670,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2024-08-01,P006,680,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2024-09-01,P006,690,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2024-10-01,P006,800,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2024-11-01,P006,850,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2024-12-01,P006,700,Appliances,Washing Machines,LG,North,25000,0.15,4.7
+2020-01-01,P007,300,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2020-02-01,P007,310,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2020-03-01,P007,320,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2020-04-01,P007,330,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2020-05-01,P007,340,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2020-06-01,P007,350,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2020-07-01,P007,360,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2020-08-01,P007,370,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2020-09-01,P007,380,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2020-10-01,P007,500,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2020-11-01,P007,550,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2020-12-01,P007,400,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2021-01-01,P007,410,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2021-02-01,P007,420,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2021-03-01,P007,430,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2021-04-01,P007,440,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2021-05-01,P007,450,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2021-06-01,P007,460,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2021-07-01,P007,470,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2021-08-01,P007,480,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2021-09-01,P007,490,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2021-10-01,P007,600,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2021-11-01,P007,650,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2021-12-01,P007,500,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2022-01-01,P007,510,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2022-02-01,P007,520,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2022-03-01,P007,530,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2022-04-01,P007,540,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2022-05-01,P007,550,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2022-06-01,P007,560,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2022-07-01,P007,570,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2022-08-01,P007,580,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2022-09-01,P007,590,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2022-10-01,P007,700,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2022-11-01,P007,750,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2022-12-01,P007,600,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2023-01-01,P007,610,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2023-02-01,P007,620,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2023-03-01,P007,630,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2023-04-01,P007,640,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2023-05-01,P007,650,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2023-06-01,P007,660,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2023-07-01,P007,670,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2023-08-01,P007,680,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.
+2024-04-01,P007,740,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2024-05-01,P007,750,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2024-06-01,P007,760,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2024-07-01,P007,770,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2024-08-01,P007,780,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2024-09-01,P007,790,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2024-10-01,P007,900,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2024-11-01,P007,950,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2024-12-01,P007,800,Furniture,Sofa,Urban Ladder,West,35000,0.2,4.4
+2020-01-01,P008,50,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2020-02-01,P008,55,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2020-03-01,P008,60,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2020-04-01,P008,65,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2020-05-01,P008,70,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2020-06-01,P008,75,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2020-07-01,P008,80,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2020-08-01,P008,85,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2020-09-01,P008,90,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2020-10-01,P008,150,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2020-11-01,P008,170,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2020-12-01,P008,100,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2021-01-01,P008,105,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2021-02-01,P008,110,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2021-03-01,P008,115,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2021-04-01,P008,120,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2021-05-01,P008,125,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2021-06-01,P008,130,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2021-07-01,P008,135,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2021-08-01,P008,140,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2021-09-01,P008,145,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2021-10-01,P008,200,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2021-11-01,P008,220,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2021-12-01,P008,150,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2022-01-01,P008,155,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2022-02-01,P008,160,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2022-03-01,P008,165,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2022-04-01,P008,170,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2022-05-01,P008,175,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2022-06-01,P008,180,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2022-07-01,P008,185,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2022-08-01,P008,190,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2022-09-01,P008,195,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2022-10-01,P008,250,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2022-11-01,P008,270,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2023-05-01,P008,225,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2023-06-01,P008,230,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2023-07-01,P008,235,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2023-08-01,P008,240,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2023-09-01,P008,245,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2023-10-01,P008,300,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2023-11-01,P008,320,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2023-12-01,P008,250,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2024-01-01,P008,255,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2024-02-01,P008,260,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2024-03-01,P008,265,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2024-04-01,P008,270,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2024-05-01,P008,275,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2024-06-01,P008,280,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2024-07-01,P008,285,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2024-08-01,P008,290,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2024-09-01,P008,295,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2024-10-01,P008,350,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2024-11-01,P008,370,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2024-12-01,P008,300,Sports,Cricket Bat,SG,South,2000,0.1,4.9
+2020-01-01,P009,250,Groceries,Snacks,Lays,East,20,0,4.3
+2020-02-01,P009,260,Groceries,Snacks,Lays,East,20,0,4.3
+2020-03-01,P009,270,Groceries,Snacks,Lays,East,20,0,4.3
+2020-04-01,P009,280,Groceries,Snacks,Lays,East,20,0,4.3
+2020-05-01,P009,290,Groceries,Snacks,Lays,East,20,0,4.3
+2020-06-01,P009,300,Groceries,Snacks,Lays,East,20,0,4.3
+2020-07-01,P009,310,Groceries,Snacks,Lays,East,20,0,4.3
+2020-08-01,P009,320,Groceries,Snacks,Lays,East,20,0,4.3
+2020-09-01,P009,330,Groceries,Snacks,Lays,East,20,0,4.3
+2020-10-01,P009,450,Groceries,Snacks,Lays,East,20,0,4.3
+2021-02-01,P009,370,Groceries,Snacks,Lays,East,20,0,4.3
+2021-03-01,P009,380,Groceries,Snacks,Lays,East,20,0,4.3
+2021-04-01,P009,390,Groceries,Snacks,Lays,East,20,0,4.3
+2021-05-01,P009,400,Groceries,Snacks,Lays,East,20,0,4.3
+2021-06-01,P009,410,Groceries,Snacks,Lays,East,20,0,4.3
+2021-07-01,P009,420,Groceries,Snacks,Lays,East,20,0,4.3
+2021-08-01,P009,430,Groceries,Snacks,Lays,East,20,0,4.3
+2021-09-01,P009,440,Groceries,Snacks,Lays,East,20,0,4.3
+2021-10-01,P009,550,Groceries,Snacks,Lays,East,20,0,4.3
+2021-11-01,P009,600,Groceries,Snacks,Lays,East,20,0,4.3
+2021-12-01,P009,460,Groceries,Snacks,Lays,East,20,0,4.3
+2022-01-01,P009,470,Groceries,Snacks,Lays,East,20,0,4.3
+2022-02-01,P009,480,Groceries,Snacks,Lays,East,20,0,4.3
+2022-03-01,P009,490,Groceries,Snacks,Lays,East,20,0,4.3
+2022-04-01,P009,500,Groceries,Snacks,Lays,East,20,0,4.3
+2022-05-01,P009,510,Groceries,Snacks,Lays,East,20,0,4.3
+2022-06-01,P009,520,Groceries,Snacks,Lays,East,20,0,4.3
+2022-07-01,P009,530,Groceries,Snacks,Lays,East,20,0,4.3
+2022-08-01,P009,540,Groceries,Snacks,Lays,East,20,0,4.3
+2022-09-01,P009,550,Groceries,Snacks,Lays,East,20,0,4.3
+2022-10-01,P009,650,Groceries,Snacks,Lays,East,20,0,4.3
+2022-11-01,P009,700,Groceries,Snacks,Lays,East,20,0,4.3
+2022-12-01,P009,560,Groceries,Snacks,Lays,East,20,0,4.3
+2023-01-01,P009,570,Groceries,Snacks,Lays,East,20,0,4.3
+2023-02-01,P009,580,Groceries,Snacks,Lays,East,20,0,4.3
+2023-03-01,P009,590,Groceries,Snacks,Lays,East,20,0,4.3
+2023-04-01,P009,600,Groceries,Snacks,Lays,East,20,0,4.3
+2023-05-01,P009,610,Groceries,Snacks,Lays,East,20,0,4.3
+2023-06-01,P009,620,Groceries,Snacks,Lays,East,20,0,4.3
+2023-07-01,P009,630,Groceries,Snacks,Lays,East,20,0,4.3
+2023-08-01,P009,640,Groceries,Snacks,Lays,East,20,0,4.3
+2023-09-01,P009,650,Groceries,Snacks,Lays,East,20,0,4.3
+2023-10-01,P009,750,Groceries,Snacks,Lays,East,20,0,4.3
+2023-11-01,P009,800,Groceries,Snacks,Lays,East,20,0,4.3
+2023-12-01,P009,660,Groceries,Snacks,Lays,East,20,0,4.3
+2024-01-01,P009,670,Groceries,Snacks,Lays,East,20,0,4.3
+2024-02-01,P009,680,Groceries,Snacks,Lays,East,20,0,4.3
+2024-03-01,P009,690,Groceries,Snacks,Lays,East,20,0,4.3
+2024-04-01,P009,700,Groceries,Snacks,Lays,East,20,0,4.3
+2024-08-01,P009,740,Groceries,Snacks,Lays,East,20,0,4.3
+2024-09-01,P009,750,Groceries,Snacks,Lays,East,20,0,4.3
+2024-10-01,P009,850,Groceries,Snacks,Lays,East,20,0,4.3
+2024-11-01,P009,900,Groceries,Snacks,Lays,East,20,0,4.3
+2024-12-01,P009,760,Groceries,Snacks,Lays,East,20,0,4.3
+2020-01-01,P010,150,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2020-02-01,P010,160,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2020-03-01,P010,170,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2020-04-01,P010,180,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2020-05-01,P010,190,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2020-06-01,P010,200,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2020-07-01,P010,210,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2020-08-01,P010,220,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2020-09-01,P010,230,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2020-10-01,P010,350,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2020-11-01,P010,400,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2020-12-01,P010,250,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2021-01-01,P010,260,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2021-02-01,P010,270,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2021-03-01,P010,280,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2021-04-01,P010,290,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2021-05-01,P010,300,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2021-06-01,P010,310,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2021-07-01,P010,320,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2021-08-01,P010,330,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2021-09-01,P010,340,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2021-10-01,P010,450,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2022-04-01,P010,400,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2022-05-01,P010,410,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2022-06-01,P010,420,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2022-07-01,P010,430,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2022-08-01,P010,440,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2022-09-01,P010,450,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2022-10-01,P010,550,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2022-11-01,P010,600,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2022-12-01,P010,460,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2023-01-01,P010,470,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2023-02-01,P010,480,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2023-03-01,P010,490,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2023-04-01,P010,500,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2023-05-01,P010,510,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2023-06-01,P010,520,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2023-07-01,P010,530,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2023-08-01,P010,540,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2023-09-01,P010,550,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2023-10-01,P010,650,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2023-11-01,P010,700,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2023-12-01,P010,560,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2024-01-01,P010,570,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2024-02-01,P010,580,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2024-03-01,P010,590,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2024-04-01,P010,600,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2024-05-01,P010,610,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2024-06-01,P010,620,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2024-07-01,P010,630,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2024-08-01,P010,640,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2024-09-01,P010,650,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2024-10-01,P010,750,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2024-11-01,P010,800,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
+2024-12-01,P010,660,Toys,Action Figures,Hasbro,Central,1000,0.1,4.5
